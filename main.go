@@ -6,7 +6,7 @@ import (
 	// "log"
 	"net/http"
 	"time"
-	"github/Stanlyzoolo/speedchecksystem/httpserver"
+	"github.com/Stanlyzoolo/speedchecksystem/httpserver"
 	
 )
 
@@ -26,6 +26,6 @@ func main() {
 	// log.Printf("Serving %s on HTTP port: %s\n", *directory, *port)
 	// log.Fatal(http.ListenAndServe(":"+*port, nil))
 
-	handler := httpserver.HttpHanler{}
+	handler := speedchecksystem.HttpHandler{}
 	http.ListenAndServe(":9000", handler)
 }
